@@ -1,0 +1,410 @@
+html
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.titulos
+{
+    display:flex;
+    justify-content:center;
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:40px;
+    color:  #FFC000;
+    padding-top: 40px;
+}
+.inicio
+{
+    background-image: url(/img/fondo.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-bottom: 100px;
+    transition: all 0.5s ease;
+}
+.inicio .menu
+{
+    width: 100%;
+    height: 80px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255,0.3);
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+.inicio .menu ul
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.inicio .menu ul li
+{
+    margin: 10px;
+    margin-top: 20px;
+}
+.inicio .menu ul li a
+{
+    color: rgb(255, 255, 255,0.7);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.inicio .menu ul li a:hover
+{
+    color: #FFC000;
+}
+.contain
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    transition: all 0.5s ease;
+    padding-bottom: 20px;
+}
+.contain section
+{
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.contain img
+{
+    height: 320px;
+    border-radius: 50%;
+}
+.contain .imgs
+{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+.contain section h1 b
+{
+    color: #FFC000;
+}
+.contain .redes
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.contain .redes img
+{
+    height: 40px;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius: 0;
+    transition: all 0.5s ease;
+}
+.contain .redes img:hover
+{
+    transform: translateY(-6px);
+}
+
+.informacion
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 20px;
+    transition: all 0.5s ease;
+}
+.habilidades
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: rgb(241, 241, 241,0.3);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.habilidades section header
+{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* margin: 20px; */
+}
+.habilidades section li
+{
+    display: flex;
+    justify-content: center
+}
+.habilidades section main
+{
+    margin: 40px;
+}
+.habilidades section li progress
+{
+    margin-top: 20px;
+    height:28px;
+    width: 200px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+progress[value]::-webkit-progress-value 
+{
+    background-color: #FFC000;
+    border-radius: 10px;
+}
+progress[value]::-webkit-progress-bar
+{
+    background-color: #E3E5E7;
+    border-radius: 10px;
+}
+.habilidades section .developer
+{
+    height: 180px;
+}
+.habilidades section img
+{
+    display: block;
+    text-align: center;
+    height: 50px;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+.btn-cv
+{
+    display: flex;
+    justify-content:center;
+    border-bottom-style: solid;
+    border-width: 1px;
+    background: rgb(241, 241, 241,0.3);
+    border-color: #E3E5E7;
+    padding-bottom: 100px;
+}
+.btn-cv .button
+{
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: #FFC000;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    transition: all 0.5s ease;
+}
+.btn-cv .button:hover
+{
+    background: black;
+}
+.cursos
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cursos section img
+{
+    height: 140px;
+}
+.cursos section 
+{
+    display: block;
+    background: white;
+    margin: 40px;
+    box-shadow: 1px 1px 20px 1px #818181;
+}
+.cursos section header
+{
+    display: flex;
+    justify-content: center;
+}
+.cursos section main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+.portafolio
+{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.portafolio section
+{
+    margin: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(172, 172, 172,0.5);
+    transition: all 0.5s ease;
+}
+.portafolio section:hover
+{
+    /* transform: scale(1.1); */
+    /* filter: grayscale(0); */
+}
+.portafolio header
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(153, 153, 153);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.portafolio section main
+{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portafolio .logo
+{
+    height: 150px;
+}
+.footer
+{
+    color: #797979;
+    display:grid;
+    grid-template-columns: 600px;
+    justify-content: flex-start;
+    margin-top: 50px;
+    text-align: justify;
+    background: #222222;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.5s ease;
+}
+
+.footer section
+{
+    margin:40px;
+}
+.contactos
+{
+    display: flex;
+    justify-content: center;
+    background: #272727;
+}
+.contactos section img
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    filter: grayscale(1);
+}
+.contactos section img:hover
+{
+    filter: grayscale(0);
+}
+.footer2
+{
+    background: #272727;
+    height: 50px;
+    text-align: center;
+    color: #797979;
+}
+.footer2 p
+{
+    padding:10px
+}
+
+
+@media screen and (max-width:768px)
+{
+    .inicio .menu
+    {
+        display: flex;
+        justify-content:center;
+    }
+    /* .inicio .menu ul li a
+    {
+        font-size: 15px;
+    }
+    .inicio .menu ul li
+    {
+        margin: 15px;
+        margin-top: 20px;
+    } */
+    .inicio .menu ul li
+    {
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-top: 20px;
+    }
+    .inicio .menu ul li a
+    {
+        font-size: 15px;
+    }
+    .contain 
+    {
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contain section
+    {
+        margin-top:120px;
+    }
+    .habilidades
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .habilidades section img
+    {
+        height: 50px;
+    }
+    .btn-cv .button
+    {
+        margin-top: 35px;
+    }
+    .cursos
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .portafolio
+    {
+        display: grid;
+        grid-template-columns: 400px;
+    }
+    .footer
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer .footer-contactos .img ,.a-img
+    {
+        height: 25px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width:400px)
+{
+    .inicio .menu
+    {
+        display: flex;
+        justify-content:center;
+    }
+    .inicio .menu ul li
+    {
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+    .inicio .menu ul li a
+    {
+        font-size: 13px;
+    }
+}
