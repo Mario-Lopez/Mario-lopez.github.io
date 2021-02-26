@@ -202,7 +202,7 @@ progress[value]::-webkit-progress-bar
 .cursos
 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 33% 33% 33%;
 }
 .cursos section img
 {
@@ -213,12 +213,17 @@ progress[value]::-webkit-progress-bar
     display: block;
     background: white;
     margin: 40px;
-    box-shadow: 1px 1px 20px 1px #818181;
+    text-align: center;
+    /* box-shadow: 1px 1px 5px 1px #818181; */
 }
 .cursos section header
 {
     display: flex;
     justify-content: center;
+}
+.cursos section header img
+{
+    height: 200px;
 }
 .cursos section main
 {
