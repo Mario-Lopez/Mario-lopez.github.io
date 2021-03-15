@@ -242,7 +242,7 @@ progress[value]::-webkit-progress-bar
 
 .portafolio section
 {
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px rgb(172, 172, 172,0.5);
     transition: all 0.5s ease;
@@ -402,10 +402,6 @@ progress[value]::-webkit-progress-bar
         display: flex;
         justify-content:center;
     }
-    .portafolio main img
-    {
-        height: 180px;
-    }
     .inicio .menu ul li
     {
         margin-right: 12px;
@@ -415,5 +411,14 @@ progress[value]::-webkit-progress-bar
     .inicio .menu ul li a
     {
         font-size: 13px;
+    }
+    .portafolio
+    {
+        display: grid;
+        grid-template-columns: 400px;
+    }
+    .portafolio main img
+    {
+        height: 180px;
     }
 }
