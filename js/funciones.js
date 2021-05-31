@@ -11,11 +11,11 @@ window.addEventListener('scroll',function()
     if(pos < botonHome)
     {
         menu.style.background="black";
-        menu.style.height="50px";
+        // menu.style.height="50px";
     }
     else
     {
         menu.style.background="none";
-        menu.style.height="80px";
+        // menu.style.height="80px";
     }
 })

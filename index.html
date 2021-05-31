@@ -5,24 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soy Mario López</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/cv.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="icon" href="img/LogoMario.ico">
 </head>
 
 <body>
 
     <div class="inicio" id="inicio">
-        <header class="menu" id="menu">
-            <ul>
-                <li><a href="#" style="color: #FFC000;">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <!-- <li><a href="#cursos">Aprendizaje</a></li> -->
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+            <div class="container-fluid">
+                <!-- <img src="img/LogoMario.png" alt="" class="logo"> -->
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span><img src="img/lista.png" alt=""></span>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                        <!-- <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Extras
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="plantillas.html">Diseños web</a></li>
+                                <!-- <li><a class="dropdown-item" href="">Misión y visión</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="">Tienda</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div class="contain">
             <section class="informacion">
@@ -31,59 +57,87 @@
                     <p>Programador y Diseñador web junior</p>
                 </header>
                 <ul class="redes">
-                    <a href="https://www.facebook.com/9MarioLopez9/" target="_blank"><img src="img/facebook.png" alt=""></a>
+                    <a href="https://www.facebook.com/9MarioLopez9/" target="_blank"><img src="img/facebook.png"
+                            alt=""></a>
                     <!-- <a href="https://twitter.com/brochita123" target="_blank"><img src="img/twitter.png" alt=""></a> -->
-                    <a href="https://www.instagram.com/9__mario__9/" target="_blank"><img src="img/instagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/9__mario__9/" target="_blank"><img src="img/instagram.png"
+                            alt=""></a>
                     <a href="https://github.com/Mario-Lopez" target="_blank"><img src="img/github.png" alt=""></a>
                 </ul>
             </section>
             <section class="foto">
                 <img src="img/yo.jpg" alt="">
+                <!-- <img src="img/yo.png" alt=""> -->
             </section>
         </div>
     </div>
-    
+
 
     <h1 class="titulos" id="sobre-mi"><b>Sobre mí</b></h1>
     <div class="informacion">
         <section>
+            <header id="limite"><img src="img/LogoUPG.png" alt=""></header>
             <p>Estudiante de Ingeniería en Tecnologías de la Información en la Universidad Politécnica de Gómez Palacio
+                con un
+                promedio de 9.6
             </p>
-            <h4 id="limite">Estudios</h4>
-            <li>Ingeniería en Tecnologías de la Información - Universidad Politécnica de Gómez Palacio</li>
-            <li>Técnico Profesional en Mantenimiento Industrial - Cetis #47</li>
         </section>
     </div>
 
-    <!-- <h1 class="titulos"><b>Habilidades</b></h1> -->
-    <div class="habilidades" id="habilidades">
+    <!-- <div class="lenguajes">
         <section>
-            <header><h4>Algunos datos:</h4></header>
+            <main><img src="img/html.png" alt=""></main>
+            <footer><h1>70%</h1></footer>
+        </section>
+
+        <section>
+            <main><img src="img/css.png" alt=""></main>
+            <footer><h1>50%</h1></footer>
+        </section>
+
+        <section>
+            <main><img src="img/js.png" alt=""></main>
+            <footer><h1>20%</h1></footer>
+        </section>
+
+        <section>
+            <main><img src="img/csharp.png" alt=""></main>
+            <footer><h1>70%</h1></footer>
+        </section>
+    </div> -->
+    <div class="aboutme">
+        <section class="about-img">
+            <main><img src="img/developer.png" alt=""></main>
+        </section>
+
+        <section class="about-text">
+            <header><h1>Soy Mario Angel López Esquivel</h1></header>
             <main>
-                <li><p>Soy un joven de 21 años actualmente estudiando una ingeniería.</p></li>
-                <li><img src="img/developer.png" alt="" class="developer"></li>
-                <li><p>Me gusta cada día aprender cosas nuevas que me ayuden a desarrollarme de manera profesional.</p></li>
+                <p>Un joven de 21 años con conocimiento en desarrollo web y creación de aplicaciones
+                de escritorio con C#. En un futuro busco ser reconocido por mi habilidad debido a que me considero
+                una persona capaz de alcanzar todas las metas que me propongo.
+                <br>
+                <p></p>
+            </p></main>
+        </section>
+    </div>
+    <div class="conocimientos">
+        <section>
+            <header><h1>Conocimientos</h1></header>
+            <main>
+                <p>Desarrollo de páginas web con HTML, CSS y JS</p>
+                <p>Desarrollo de aplicaciones de escritorio con C#</p>
+                <p>Configuración y mantenimiento a equipos de cómputo</p>
+                <p>Manejo de base de datos con MySQL Workbench y SQL Server </p>
             </main>
         </section>
+
         <section>
-            <header><h4>Lenguajes manejados</h4></header>
+            <header><h1>Cualidades</h1></header>
             <main>
-                <li>
-                    <img src="img/html.png" alt="">
-                    <progress max="100" value="80"></progress>
-                </li>
-                <li>
-                    <img src="img/css.png" alt="">
-                    <progress max="100" value="80"></progress>
-                </li>
-                <li>
-                    <img src="img/js.png" alt="">
-                    <progress max="100" value="30"></progress>
-                </li>
-                <li>
-                    <img src="img/csharp.png" alt="">
-                    <progress max="100" value="70"></progress>
-                </li>
+                <p>Trabajar bajo presión</p>
+                <p>Trabajar en equipo</p>
+                <p>Responsable</p>
             </main>
         </section>
     </div>
@@ -91,37 +145,14 @@
         <a href="#" class="button" target="_blank">Descargar CV</a>
     </div>
 
-    <!-- <h1 class="titulos" id="cursos"><b>Aprendizaje</b></h1>
-    <div class="cursos">
-        <section>
-            <header><img src="img/certificado1.png" alt=""></header>
-            <main>
-                <li>SQL: Creación de base de datos de cero a profesional.</li>
-                <li>Realizado en 2020</li>
-            </main>
-        </section>
-        <section>
-            <header><img src="img/certificado2.png" alt=""></header>
-            <main>
-                <li>HTML5 & CSS3 Training</li>
-                <li>Realizado en 2020</li>
-            </main>
-        </section>
-        <section>
-            <header><img src="img/certificado3.png" alt=""></header>
-            <main>
-                <li>Fundamentos de Git en Cloud</li>
-                <li>Realizado en 2021</li>
-            </main>
-        </section>
-    </div> -->
-
 
     <h1 class="titulos" id="portafolio">Portafolio</h1>
     <div class="portafolio">
         <section>
             <header><img src="img/logoP.png" alt=""></header>
-            <nav><h1>Veterinaria Petdopcion (en progreso)</h1></nav>
+            <nav>
+                <h1>Veterinaria Petdopcion (en progreso)</h1>
+            </nav>
             <main>
                 <a href="https://mario-lopez.github.io/PetDopcion/"><img src="img/petdopcion.png" alt=""></a>
             </main>
@@ -129,8 +160,12 @@
 
         <section>
             <header><img src="img/logoC.png" alt=""></header>
-            <nav><h1>Cyber Cafe (próximamente)</h1></nav>
-            <main></main>
+            <nav>
+                <h1>Cyber Cafe (Próximamente)</h1>
+            </nav>
+            <main>
+                <!-- <a href=""><img src="img/cafeteria.jpg" alt=""></a> -->
+            </main>
         </section>
     </div>
 
@@ -141,7 +176,7 @@
             <h1 style="font-size: 18px; color: rgb(255, 192, 0,0.8);">Motivo de la página</h1>
             <p>
                 Como futuro Ingeniero en Tecnologías de la Información, busco demostrar mis conocimientos aplicados en
-                la creación de la página web.
+                el desarrollo web.
             </p>
         </section>
 
@@ -150,8 +185,10 @@
         <section>
             <main>
                 <a href=""><img src="img/telegrama.png" alt=""></a>
-                <a href="mailto:mario_angel99@hotmail.com" target="_blank" class="a-img"><img src="img/email.png" alt="" class="img"></a><a href=""></a>
-                <a href="https://wa.me/528714281929" target="_blank" class="a-img"><img src="img/whatsapp.png" alt="" class="img"></a>
+                <a href="mailto:mario_angel99@hotmail.com" target="_blank" class="a-img"><img src="img/email.png" alt=""
+                        class="img"></a><a href=""></a>
+                <a href="https://wa.me/528714281929" target="_blank" class="a-img"><img src="img/whatsapp.png" alt=""
+                        class="img"></a>
             </main>
         </section>
     </div>
@@ -159,8 +196,10 @@
         <p>© 2021 | Mario Angel López Esquivel</p>
     </div>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+
     <script src="js/funciones.js"></script>
 </body>
 
