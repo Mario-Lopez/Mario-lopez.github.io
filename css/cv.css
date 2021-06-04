@@ -1,17 +1,44 @@
-html {
+body{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    background: black;
 }
 
 .titulos {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 40px;
     color: #FFC000;
     padding-top: 40px;
+}
+#sobre-mi{
+    padding-top: 120px;
+}
+#portafolio{
+    padding-top: 120px;
+}
+#menu{
+    width: 100%;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+
+ #menu .nav-link{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+#menu .nav-link.active{
+    color: #FFC000;
+}
+#menu .nav-link:hover{
+    color:#FFC000;
 }
 
 .inicio {
@@ -21,59 +48,8 @@ html {
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    margin-bottom: 100px;
     transition: all 0.5s ease;
 }
-.inicio #menu{
-    width: 100%;
-    position: fixed;
-    transition: all 0.5s ease;
-}
-/* .inicio #menu .container-fluid{
-    background: #FFC000;
-    margin: 0px;
-    padding: 50px;
-} */
-.inicio #menu .nav-link{
-    color: white;
-    font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.inicio #menu .nav-link:hover{
-    color:#FFC000;
-}
-/* .inicio .menu {
-    width: 100%;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: rgb(255, 255, 255, 0.3);
-    display: flex;
-    justify-content: flex-start;
-    position: fixed;
-    transition: all 0.5s ease;
-}
-
-.inicio .menu ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.inicio .menu ul li {
-    margin: 10px;
-    margin-top: 20px;
-}
-
-.inicio .menu ul li a {
-    color: rgb(255, 255, 255, 0.7);
-    font-size: 18px;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-.inicio .menu ul li a:hover {
-    color: #FFC000;
-} */
 
 .contain {
     display: grid;
@@ -86,7 +62,13 @@ html {
 .contain .informacion{
     display: flex;
     justify-content: center;
+    background: rgba(241, 241, 241, 0.137);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
     flex-direction: column;
+    border-radius: 2px;
 }
 .contain .informacion header{
     display: flex;
@@ -124,103 +106,92 @@ html {
     transform: translateY(-6px);
 }
 
-.informacion {
+.aboutMe {
     display: flex;
     justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
     text-align: justify;
-    margin: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background: rgb(241, 241, 241, 0.3);
     transition: all 0.5s ease;
 }
-.informacion header{
+.aboutMe .img{
     display: flex;
     justify-content: center;
 }
-.informacion header img{
-    height: 210px;
+.aboutMe .img img{
+    height: 240px;
 }
-.aboutme{
-    display: grid;
-    padding-top: 50px;
-    grid-template-columns: repeat(2,1fr);
-    margin-left: 40px;
-    margin-right: 40px;
-    background: rgb(241, 241, 241, 0.3);
-}
-.aboutme .about-img{
-    display: flex;
-    justify-content: center;
-}
-.aboutme .about-img main img{
-    height: 220px
-}
-.aboutme .about-text{
-    display: block;
 
-}
-.aboutme .about-text header h1{
-    font-size: 20px;
-    text-align: center;
-}
-.aboutme .about-text main{
-    text-align: justify;
-}
-/* .lenguajes {
+.habilidades {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background: rgb(241, 241, 241, 0.3);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: all 0.5s ease;
-}
-.lenguajes section main{
-    display: flex;
-    justify-content: center;
-}
-.lenguajes section main img{
-    height: 80px;
-}
-.lenguajes section footer h1
-{
-    margin: 10px;
-    color: rgb(122, 122, 122);
-    font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} */
-.conocimientos{
-    border-top-style: solid;
-    border-top-width: 1px;
-    background: rgb(241, 241, 241, 0.3);
-    border-top-color:rgba(236, 225, 225, 0.3);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: grid;
     margin-left: 40px;
     margin-right: 40px;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 10px;
+    transition: all 0.5s ease;
 }
-.conocimientos h1{
-    font-size: 20px;
-    text-align: center;
-}
-.conocimientos section main{
-    display: block;
-}
-.conocimientos section main p{
+
+.habilidades section header {
     display: flex;
     justify-content: center;
-    text-align: justify;
+    font-size: 20px;
+    padding-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* margin: 20px; */
 }
+
+.habilidades section li {
+    display: flex;
+    justify-content: center
+}
+
+.habilidades section main {
+    margin: 40px;
+}
+
+.habilidades section li progress {
+    margin-top: 20px;
+    height: 28px;
+    width: 200px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #FFC000;
+    border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #E3E5E7;
+    border-radius: 10px;
+}
+
+.habilidades section .developer {
+    height: 180px;
+}
+
+.habilidades section img {
+    display: block;
+    text-align: center;
+    height: 50px;
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
 .btn-cv {
     display: flex;
     justify-content: center;
-    border-bottom-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
     background: rgb(241, 241, 241, 0.3);
-    margin-left: 40px;
-    margin-right: 40px;
+    border-color: #E3E5E7;
     padding-bottom: 100px;
 }
 
@@ -232,86 +203,162 @@ html {
     padding-bottom: 10px;
     text-align: center;
     background: #FFC000;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-color: rgb(192, 192, 192);
-    border-width: 1px;
+    border-style: none;
     transition: all 0.5s ease;
 }
 
 .btn-cv .button:hover {
-    text-decoration: none;
     background: black;
 }
-
-.portafolio {
+.portafolio{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    grid-gap: 100px;
-    transition: all 0.5s ease;
+    justify-items: center;
 }
-
-.portafolio section {
-    transition: all 0.5s ease;
+.portafolio section{
+    margin: 40px;
 }
-
-.portafolio header {
+.portafolio section header{
     display: flex;
     justify-content: center;
 }
-
-.portafolio header img {
-    height: 80px;
+.portafolio section header img{
+    height: 120px;
 }
-
-.portafolio nav {
+.portafolio section main{
+    overflow: hidden;
+    position: relative;
+    transition: all 500ms ease-out;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.portafolio section main img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.portafolio section main .caja
+{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
-
-.portafolio nav h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: rgb(122, 122, 122);
+.portafolio section main:hover >.caja{
+    opacity: 1;
+    visibility: visible;
 }
-
-.portafolio main {
-    display: flex;
-    justify-content: center;
+.portafolio section main:hover >.caja h3{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.portafolio section main .caja h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 10px;
+}
+.portafolio section main .caja main{
+    color: white;
+    margin-bottom: 10px;
+}
+.portafolio section main .caja a{
+    text-decoration: none;
+    padding-right: 40px;
+    background: #FFC000;
+    border-radius: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 40px;
+    color: white;
+}
+.portafolio section main .caja a:hover{
+    background: black;
+    color: white;
     transition: all 0.5s ease;
 }
-
-.portafolio main img {
-    width: 400px;
-    height: 250px;
-    transition: all 0.5s ease;
+.portafolio section main:hover > img{
+    transform: scale(1.2);
 }
-
 .footer {
     color: #797979;
     display: grid;
-    grid-template-columns: 600px;
+    grid-template-columns: repeat(2,1fr);
     justify-content: flex-start;
     margin-top: 50px;
     text-align: justify;
     background: #222222;
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
     transition: all 0.5s ease;
 }
-
 .footer section {
     margin: 40px;
 }
-
-.contactos {
+.footer section header{
+    display: flex;
+    justify-content: center;
+}
+.footer section main{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.footer section main input{
+    display: inline-block;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #222222;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: white;
+}
+.footer section main textarea{
+    display: inline-block;
+    background: #222222;
+    border-style: none;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: white;
+}
+.footer section main footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.footer section main footer input[type="submit"]{
+    background: #FFC000;
+    border-style: none;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+.contactos{
     display: flex;
     justify-content: center;
     background: #272727;
 }
-
 .contactos section img {
     margin-left: 10px;
     margin-right: 10px;
@@ -335,7 +382,17 @@ html {
 .footer2 p {
     padding: 10px
 }
+/* Scroll personalizado */
+body::-webkit-scrollbar{
+    width: 10px;
+    box-shadow: #222222;
+}
+body::-webkit-scrollbar-thumb{
+    background: #FFC000;
+    border-radius: 15px;
 
+
+}
 
 @media screen and (max-width:768px) {
     .inicio .menu {
@@ -356,34 +413,38 @@ html {
     .contain {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding-top: 150px;
     }
 
     .contain section {
         margin-top: 120px;
     }
-    .aboutme{
+
+    .habilidades {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .conocimientos{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+
+    .habilidades section img {
+        height: 50px;
     }
+
     .btn-cv .button {
         margin-top: 35px;
     }
 
+    .cursos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .portafolio {
         display: grid;
-        grid-template-columns: 400px;
+        grid-template-columns: repeat(1,1fr);
     }
 
-    .portafolio main img {
+    /* .portafolio main img {
         height: 200px;
-    }
-
+    }  */
     .footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -415,7 +476,7 @@ html {
 
     .portafolio {
         display: grid;
-        grid-template-columns: 400px;
+        grid-template-columns: repeat(1,1fr);
     }
 
     .portafolio main img {
@@ -430,9 +491,9 @@ html {
         border-radius: 50%;
     }
 
-    .portafolio main img {
+    /* .portafolio main img {
         width: 300px;
         height: 250px;
         transition: all 0.5s ease;
-    }
+    } */
 }
