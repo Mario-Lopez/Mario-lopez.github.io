@@ -1,25 +1,29 @@
 window.addEventListener('scroll',function()
 {
-    let menu = this.document.getElementById('menu');
+    let fotoMario = this.document.getElementById('fotoMia');
+    let InfMario = this.document.getElementById('infoMia');
+    let btnBack = this.document.getElementById('btnBack');
 
-    let pos = limite.getBoundingClientRect().top;
+    let pos = fotoMario.getBoundingClientRect().top;
     console.log(pos);
 
 
-    let botonHome = window.innerHeight/1.1;
+    let botonHome = window.innerHeight/1;
 
     if(pos < botonHome)
     {
-        menu.style.background="black";
-        menu.style.paddingTop="20px";
-        menu.style.paddingBottom="20px";
-        // menu.style.height="50px";
+        fotoMario.style.opacity="1";
+        fotoMario.style.transform="translateY(0%)"
+        InfMario.style.opacity="1";
+        InfMario.style.transform="translateY(0%)"
+        btnBack.style.transform="translateY(0%)"
     }
     else
     {
-        menu.style.background="none";
-        menu.style.paddingTop="0px";
-        menu.style.paddingBottom="0px";
-        // menu.style.height="80px";
+        fotoMario.style.opacity="0";
+        fotoMario.style.transform="translateY(50%)"
+        InfMario.style.opacity="0";
+        InfMario.style.transform="translateY(50%)"
+        btnBack.style.transform="translateY(180%)"
     }
 })
