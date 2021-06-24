@@ -13,43 +13,44 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
-        <div class="container-fluid">
-            <!-- <img src="img/LogoMario.png" alt="" class="logo"> -->
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span><img src="img/lista.png" alt=""></span>
-                <!-- <span class="navbar-toggler-icon"></span> -->
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#aboutMe">About me</a>
-                    <a class="nav-link" href="#portafolio">My projects</a>
-                    <!-- <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Disabled</a> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Extras
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="plantillas.html">Web designs</a></li>
-                            <!-- <li><a class="dropdown-item" href="">Misión y visión</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="">Tienda</a></li> -->
-                        </ul>
-                    </li>
+
+    <div class="inicio" id="inicio">
+        <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span><img src="img/lista.png" alt=""></span>
+                    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#aboutMe">About me</a>
+                        <a class="nav-link" href="#portafolio">My projects</a>
+                        <!-- <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Extras
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="plantillas.html">Web designs</a></li>
+                                <!-- <li><a class="dropdown-item" href="">Misión y visión</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="">Tienda</a></li> -->
+                            </ul>
+                        </li>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <div class="inicio" id="inicio">
-        <section class="informacion">
+        </nav>
+        <div class="informacion">
             <header>
-                <h1>Hello, I'm <b>Mario López</b></h1>
+                <h1 id="inicioSaludo">Hello, I'm <b>Mario López</b></h1>
                 <p>Junior web designer and programmer</p>
             </header>
             <ul class="redes">
@@ -62,7 +63,7 @@
             <footer class="btn-cv">
                 <a href="#" target="_blank">Download CV</a>
             </footer>
-        </section>
+        </div>
     </div>
 
     <a href="#" id="btnBack"><img src="img/arrow.png" alt=""></a>
@@ -97,16 +98,20 @@
         <section>
             <header></header>
             <main>
-                <p id="infoMia">Hi! My name is Mario López and I am a student in the Information Technology Engineering career</p>
+                <p id="infoMia">Hi! My name is Mario López and I am a student in the Information Technology Engineering
+                    career.
+                    I'm ready to get my first job experience in IT.
+                    <b>My phrase at all times is "Always learn from mistakes".</b>
+                <p></p>
             </main>
         </section>
         <div>
-            <img src="img/yo2.jpg" alt="" id="fotoMia">
+            <img src="img/yo.jpg" alt="" id="fotoMia">
         </div>
     </div>
 
     <h1 class="titulos" id="portafolio">My projects</h1>
-    <div class="portafolio">
+    <div class="portafolio" id="divPortafolio">
         <section>
             <header><img src="img/logoP.png" alt=""></header>
             <main>
@@ -124,7 +129,7 @@
         <section>
             <header><img src="img/logoC.png" alt=""></header>
             <main>
-                <!-- <img src="img/nopuedeser.jpg" alt=""> -->
+                <!-- <img src="img/cyber.png" alt=""> -->
                 <div class="caja">
                     <h3>CyberCafe (Trabajo a futuro)</h3>
                     <main>PetDopcion es un proyecto en proceso
@@ -141,7 +146,7 @@
     <footer class="footer">
         <section>
             <header>
-                <h1 style="font-size: 1.4rem; color: #ea5060; font-weight: 300;">Motivo de la página</h1>
+                <h1 style="font-size: 1.4rem; color: #ea5060; font-weight: 300;">Reason for the page</h1>
             </header>
             <main>
                 <p>
