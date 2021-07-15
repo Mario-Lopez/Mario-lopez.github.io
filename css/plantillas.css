@@ -61,7 +61,14 @@
     height: 500px;
     transition: all 0.5s ease;
 }
-
+body::-webkit-scrollbar{
+    width: 10px;
+    box-shadow: #222222;
+}
+body::-webkit-scrollbar-thumb{
+    background: #ea5060 ;
+    border-radius: 15px;
+}
 @media screen and (max-width:768px) {
     .contain section main img{
         width: 400px;

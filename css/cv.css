@@ -8,27 +8,35 @@ body{
     color: #171c3b; 
     font-size: 2.8rem;
     font-weight: 200;
+    animation: anim-titulos 2s infinite alternate;
+    transform: translateY(-10px);
 }
-#btnBack{
+@keyframes anim-titulos{
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* #btn-up{
+    display: inline-block;
+    background: rgb(234, 80, 96);
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
     position: fixed;
-    background: #ea5060;
-    transform: translateY(180px);
+    bottom: 0;
+    margin: 10px;
     transition: all 0.5s ease;
-    border-radius: 10px;
 }
-#btnBack:hover{
-    border-radius: 20px;
-}
-#btnBack img{
-    height: 65px;
-}
+#btn-up img{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+} */
 #portafolio{
     padding-top: 120px;
 }
 #menu{
     width: 100%;
-    /* position: fixed; */
-    position: sticky;
     position: absolute;
     transition: all 0.5s ease;
 }
@@ -50,11 +58,12 @@ body{
 
 .inicio {
     height: 800px;
-    background-image: url(/img/fondo.jpg);
+    /* background-image: url(/img/fondo.jpg); */
+    background-image: url(/img/solespalda.jfif);
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     color: white;
     /* transition: all 0.5s ease; */
 }
@@ -63,21 +72,21 @@ body{
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: rgb(23, 28, 59,0.5);
+    background: rgb(23, 28, 59,0.8);
     flex-direction: column;
 }
 .informacion header{
     text-align: center;
 }
 .informacion header h1{
-    font-size: 0rem;
+    font-size: 2.8rem;
     font-weight: 300;
     animation: texto 2s;
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
 }
 @keyframes texto{
     100%{
-        font-size: 4.6rem;
+        font-size: 4.2rem;
     }
 }
 .informacion header p{
@@ -104,13 +113,36 @@ body{
     justify-content: center;
     margin-top: 16px;
 }
-.informacion .btn-cv a{
+.informacion .btn-cv .downCV{
     text-decoration: none;
     color: white;
     background: #ea5060;
     padding: 12px 40px;
     transition: all 0.5s ease;
     border-radius: 10px;
+    margin-right: 5px;
+}
+.informacion .btn-cv .lookLinked{
+    text-decoration: none;
+    color: #ea5060;
+    padding: 12px 40px;
+    transition: all 0.5s ease;
+    border-color: #ea5060;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-image: url(/img/linkedinC.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 10px;
+    transition: all 0.5s ease;
+}
+.informacion .btn-cv .lookLinked:hover{
+    background: rgb(23, 28, 59);
+    color: white;
+    border-color: rgb(23, 28, 59);
 }
 .informacion .btn-cv a:hover{
     border-radius: 18px;
@@ -136,7 +168,6 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    /* margin: 20px; */
 }
 .habilidades section div{
     display: flex;
@@ -174,12 +205,23 @@ progress[value]::-webkit-progress-bar {
     grid-template-columns: repeat(2,1fr);
     margin-top: 20px;
 }
-.aboutMe section{
+.aboutMe .aboutMe-Info{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 20px;
 }
-.aboutMe section main{
+.aboutMe .aboutMe-Info header{
+    display: flex;
+    justify-content: center;
+
+}
+.aboutMe .aboutMe-Info header h5{
+    color:rgb(23, 28, 59);
+    font-size: 1.6rem;
+    font-weight: 100px;
+}
+.aboutMe .aboutMe-Info main{
     display: flex;
     justify-content: center;
     text-align: justify;
@@ -187,19 +229,27 @@ progress[value]::-webkit-progress-bar {
     font-weight: 200px;
     margin: 40px;
 }
-.aboutMe section main p{
+.aboutMe .aboutMe-Info main p{
     transition: all 1s ease;
     opacity: 0;
 }
-.aboutMe div{
+.aboutMe .aboutMe-Foto main{
     display: flex;
     justify-content: center;
 }
-.aboutMe div img{
+.aboutMe .aboutMe-Foto main img{
     height: 460px;
     border-radius: 20%;
     opacity: 0;
     transition: all 1s ease;
+}
+.aboutMe .aboutMe-Foto footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+.aboutMe .aboutMe-Foto footer img{
+    height: 40px;
 }
 .portafolio{
     display: grid;
@@ -297,75 +347,31 @@ progress[value]::-webkit-progress-bar {
 .footer section {
     margin: 40px;
 }
-.footer section header{
-    display: flex;
-    justify-content: center;
-}
-.footer section main{
+.footer .footer-informacion main{
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
-.footer section main input{
-    display: inline-block;
-    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    background: #222222;
-    border-style: none;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    color: white;
-}
-.footer section main textarea{
-    display: inline-block;
-    background: #222222;
-    border-style: none;
-    width: 100%;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    color: white;
-}
-.footer section main footer{
+.footer .footer-contactos{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    flex-direction: column;
 }
-.footer section main footer a{
+.footer .footer-contactos main img{
+    display: block;
+    height: 40px;
+    margin-right: 10px;
+}
+.footer .footer-contactos main a{
+    color:#797979;
+    display: flex;
     text-decoration: none;
-    background: #ea5060;
-    border-style: none;
-    padding-top: 10px;
-    color: white;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    width: 100%;
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     transition: all 0.5s ease;
 }
-.footer section main footer a:hover{
-    background: #171c3b;
-
-}
-.contactos{
-    display: flex;
-    justify-content: center;
-    background: #272727;
-}
-.contactos section img {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px;
-    filter: grayscale(1);
-}
-
-.contactos section img:hover {
-    filter: grayscale(0);
+.footer .footer-contactos main a:hover{
+    color: white;
 }
 
 .footer2 {
@@ -386,8 +392,6 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background: #ea5060 ;
     border-radius: 15px;
-
-
 }
 @media screen and (max-width:1028px) {
     .habilidades section div{
@@ -396,7 +400,18 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media screen and (max-width:768px) {
-
+    .informacion .btn-cv{
+        display: grid;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .informacion .btn-cv .downCV{
+        margin-right: 0px;
+    }
+    .informacion .btn-cv .lookLinked{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
     .habilidades {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -404,6 +419,7 @@ body::-webkit-scrollbar-thumb{
     .habilidades section img {
         height: 50px;
     }
+    
     .aboutMe{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -417,11 +433,11 @@ body::-webkit-scrollbar-thumb{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .footer .footer-contactos .img,
+    /* .footer .footer-contactos .img,
     .a-img {
         height: 25px;
         margin: 10px;
-    }
+    } */
 
 }
 
